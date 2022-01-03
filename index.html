@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100% Perdant !!!</title>
+  </head>
+  <body>
+    <div>
+      <h1>100% Perdant !!!</h1>
+      <h2>Alors tentez votre chance !!!</h2>
+    </div>
+
+    <div>
+      <label for="code">J'ai un code !</label>
+      <input
+        type="text"
+        name="code"
+        id="code"
+        placeholder="Entrez votre code ici..."
+      />
+      <button>Go...</button>
+    </div>
+  </body>
+
+  <script>
+    document.querySelector("button").onclick = () => {
+      if ((document.querySelector("input").value = "tuvaperdrlol"))
+        location.href = "./wheel.html";
+    };
+  </script>
+
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: space-evenly;
+      align-items: center;
+
+      text-align: center;
+    }
+  </style>
+</html>

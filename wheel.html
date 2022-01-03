@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alleeeeez !!!</title>
+  </head>
+  <body>
+    <h2>Si la roue s'arrete sur le vert tu gagne un iphone</h2>
+    <img src="arrow.png" alt="Indicateur" class="arrow" />
+    <img src="wheel.png" alt="La roue" class="wheel" />
+    <span class="text">Perdu !</span>
+
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+      }
+
+
+      .wheel{
+          transform: rotate(750deg);
+          animation: roll 5s ease 0s 1 normal none;
+      }
+
+      .arrow {
+        z-index: 1;
+        transform: translateY(50%);
+      }
+      .text {
+        animation: show 4.6s linear 1 normal;
+        font-size: 2em;
+        color: red;
+      }
+
+
+      @keyframes show {
+        0% {
+          opacity: 0;
+        }
+        99% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes roll {
+        0.0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(750deg);
+        }
+        80.3%{
+          transform: rotate(720deg);
+        }
+        90.3%{
+          transform: rotate(720deg);
+        }
+        94.7%{
+          transform: rotate(750deg);
+        }
+      }
+    </style>
+  </body>
+</html>
